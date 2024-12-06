@@ -1,0 +1,28 @@
+.@{prefix} {
+  &-content {
+    position: relative;
+    display: flex;
+    // height: calc(100% - @toolBarHeight - 2 * @toolBarPadding - 1px);
+    flex: 1;
+    height: 0;
+    flex-shrink: 0;
+  }
+
+  &-resize-operate {
+    position: absolute;
+    width: 2px;
+    height: 100%;
+    background-color: var(--md-bk-color);
+    z-index: 1;
+    cursor: col-resize;
+  }
+
+  &-input-wrapper {
+    box-sizing: border-box;
+  }
+
+  &-html {
+    font-size: 16px;
+    word-break: break-all;
+  }
+}
